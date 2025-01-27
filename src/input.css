@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body{
+        @apply min-h-screen m-0 p-0 box-border flex text-lg;
+
+    }
+
+    #container{
+        @apply flex flex-col gap-2 items-center m-auto border-red-900 border-2 rounded-md content-center min-h-60 max-h-80 w-96;
+    }
+
+    #heading{
+        @apply flex-none border-b-2 border-red-900 w-full justify-items-center min-h-10 content-center text-red-950;
+    }
+
+    #inputBox{
+        @apply flex justify-between flex-none pb-2 px-2 border-b-2 border-red-900 w-full content-center gap-3;   
+    }
+
+    #taskInput{
+        @apply border-2 border-red-900 h-10 w-5/6 rounded-md p-3;
+    }
+    
+
+    #addTaskBtn{
+        @apply border-2 border-red-900 w-1/6 h-10 rounded-md;
+    }
+
+    #taskList{
+        @apply flex-grow w-full px-2 min-h-[3.5rem] overflow-y-auto;
+    }
+
+    li{
+        @apply flex flex-row justify-between border-2  border-red-900 w-full h-12 px-4 items-center mb-1 bg-white text-red-950;
+    }
+
+    #deleteBtn,#editBtn,#confirmBtn{
+        @apply text-red-950 pl-2 hover:text-red-800;
+    }
+    span{
+        @apply pl-2;
+    }    
+    
+   
+    #editForm{
+        @apply border-2 border-black rounded-lg pl-3 font-light;
+    }
+}
+
